@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Industry" representedClassName="Industry" syncable="YES">
+        <attribute name="industryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pdu" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PDU" inverseName="pduIndustry" inverseEntity="PDU" syncable="YES"/>
+    </entity>
+    <entity name="KnowledgeArea" representedClassName="KnowledgeArea" syncable="YES">
+        <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pdu" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PDU" inverseName="pduKnowledgeAreas" inverseEntity="PDU" syncable="YES"/>
+    </entity>
+    <entity name="PDU" representedClassName="PDU" syncable="YES">
+        <attribute name="componentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCompleted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateEntered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStarted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="pduHours" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="pduTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pduCategory" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PDUCategory" inverseName="pdu" inverseEntity="PDUCategory" syncable="YES"/>
+        <relationship name="pduIndustry" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Industry" inverseName="pdu" inverseEntity="Industry" syncable="YES"/>
+        <relationship name="pduKnowledgeAreas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KnowledgeArea" inverseName="pdu" inverseEntity="KnowledgeArea" syncable="YES"/>
+        <relationship name="pduProcesses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Process" inverseName="pdu" inverseEntity="Process" syncable="YES"/>
+        <relationship name="pduProvider" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PDUProvider" inverseName="pdu" inverseEntity="PDUProvider" syncable="YES"/>
+    </entity>
+    <entity name="PDUCategory" representedClassName="PDUCategory" syncable="YES">
+        <attribute name="categoryDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryMax" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="pdu" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PDU" inverseName="pduCategory" inverseEntity="PDU" syncable="YES"/>
+    </entity>
+    <entity name="PDUProvider" representedClassName="PDUProvider" syncable="YES">
+        <attribute name="providerAddress1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerAddress2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerZip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pdu" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PDU" inverseName="pduProvider" inverseEntity="PDU" syncable="YES"/>
+    </entity>
+    <entity name="Process" representedClassName="Process" syncable="YES">
+        <attribute name="processName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="pdu" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PDU" inverseName="pduProcesses" inverseEntity="PDU" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Industry" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="KnowledgeArea" positionX="-9" positionY="72" width="128" height="75"/>
+        <element name="PDU" positionX="-72" positionY="225" width="128" height="210"/>
+        <element name="PDUCategory" positionX="-297" positionY="108" width="128" height="118"/>
+        <element name="PDUProvider" positionX="-405" positionY="351" width="128" height="148"/>
+        <element name="Process" positionX="-603" positionY="189" width="128" height="90"/>
+    </elements>
+</model>
