@@ -60,7 +60,6 @@
 		1E94E3501728D3CD007A1FEB /* PKProviderEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E94E34F1728D3CD007A1FEB /* PKProviderEntryViewController.m */; };
 		1EB294CA1705598E000E007C /* PKIndustrySelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB294C91705598E000E007C /* PKIndustrySelectTableViewController.m */; };
 		1EB294CE17055E31000E007C /* Industry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB294CD17055E31000E007C /* Industry.m */; };
-		1EB84722174C7EA6002C1F90 /* drawing-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EB84721174C7EA6002C1F90 /* drawing-2-1.png */; };
 		1EB84726174C8598002C1F90 /* PKStatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB84725174C8598002C1F90 /* PKStatePicker.m */; };
 		1ED048BE17230F8000836F8E /* PKSettingsNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED048BD17230F8000836F8E /* PKSettingsNavViewController.m */; };
 		1ED048C2172313C200836F8E /* PKRemindersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED048C1172313C200836F8E /* PKRemindersTableViewController.m */; };
@@ -68,6 +67,7 @@
 		1ED048C91723353900836F8E /* PDUProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED048C81723353900836F8E /* PDUProvider.m */; };
 		1EF9397B174DB7F700404DC7 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EF9397A174DB7F700404DC7 /* icon_57.png */; };
 		1EF9397D174DB7FE00404DC7 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EF9397C174DB7FE00404DC7 /* icon_114.png */; };
+		1EFF7C22175BFBD5000123CE /* drawing-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EFF7C21175BFBD5000123CE /* drawing-2-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,7 +157,6 @@
 		1EB294C91705598E000E007C /* PKIndustrySelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKIndustrySelectTableViewController.m; sourceTree = "<group>"; };
 		1EB294CC17055E31000E007C /* Industry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Industry.h; sourceTree = "<group>"; };
 		1EB294CD17055E31000E007C /* Industry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Industry.m; sourceTree = "<group>"; };
-		1EB84721174C7EA6002C1F90 /* drawing-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drawing-2-1.png"; path = "../../Desktop/iphone_graphics/drawing-2-1.png"; sourceTree = "<group>"; };
 		1EB84723174C8554002C1F90 /* PKStatePickerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKStatePickerDelegate.h; sourceTree = "<group>"; };
 		1EB84724174C8598002C1F90 /* PKStatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKStatePicker.h; sourceTree = "<group>"; };
 		1EB84725174C8598002C1F90 /* PKStatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKStatePicker.m; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		1ED048C81723353900836F8E /* PDUProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDUProvider.m; sourceTree = "<group>"; };
 		1EF9397A174DB7F700404DC7 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
 		1EF9397C174DB7FE00404DC7 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
+		1EFF7C21175BFBD5000123CE /* drawing-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drawing-2-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,7 +280,7 @@
 		1E4D333E16E6F50E00F30DAF /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				1EB84721174C7EA6002C1F90 /* drawing-2-1.png */,
+				1EFF7C21175BFBD5000123CE /* drawing-2-1.png */,
 				1E9433A016EC613200A2AB7D /* 11-clock.png */,
 				1E9433A116EC613200A2AB7D /* 11-clock@2x.png */,
 				1E94339916EC464B00A2AB7D /* drawing1.png */,
@@ -477,12 +477,12 @@
 				1E9433A316EC613200A2AB7D /* 11-clock@2x.png in Resources */,
 				1E7931D51713EBA700A2EDC5 /* PKSetupViewController.xib in Resources */,
 				1E41B4C5172C356200720340 /* table_bg.png in Resources */,
-				1EB84722174C7EA6002C1F90 /* drawing-2-1.png in Resources */,
 				1EF9397B174DB7F700404DC7 /* icon_57.png in Resources */,
 				1EF9397D174DB7FE00404DC7 /* icon_114.png in Resources */,
 				1E37B6C0175BC55D00F865DB /* Default.png in Resources */,
 				1E37B6C2175BC57900F865DB /* Default@2x.png in Resources */,
 				1E37B6C4175BC58700F865DB /* Default-568h@2x.png in Resources */,
+				1EFF7C22175BFBD5000123CE /* drawing-2-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
