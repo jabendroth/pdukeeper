@@ -10,6 +10,9 @@
 		1E29032C172A331C00A47A28 /* PKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E29032B172A331C00A47A28 /* PKTableViewController.m */; };
 		1E290330172A3D9900A47A28 /* PKProviderSelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E29032F172A3D9900A47A28 /* PKProviderSelectTableViewController.m */; };
 		1E37B6BE175BC4AA00F865DB /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E37B6BD175BC4AA00F865DB /* GraphView.m */; };
+		1E37B6C0175BC55D00F865DB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E37B6BF175BC55D00F865DB /* Default.png */; };
+		1E37B6C2175BC57900F865DB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E37B6C1175BC57900F865DB /* Default@2x.png */; };
+		1E37B6C4175BC58700F865DB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E37B6C3175BC58700F865DB /* Default-568h@2x.png */; };
 		1E3AE9EB1745CD9E00E68734 /* PDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AE9EA1745CD9E00E68734 /* PDU.m */; };
 		1E41B4C5172C356200720340 /* table_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E41B4C4172C356200720340 /* table_bg.png */; };
 		1E4A539016EEDE0E00B5BB22 /* PKPDUEntryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A538F16EEDE0E00B5BB22 /* PKPDUEntryTableViewController.m */; };
@@ -21,9 +24,6 @@
 		1E4D331816E6EE6D00F30DAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E4D331616E6EE6D00F30DAF /* InfoPlist.strings */; };
 		1E4D331A16E6EE6D00F30DAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D331916E6EE6D00F30DAF /* main.m */; };
 		1E4D331E16E6EE6D00F30DAF /* PKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D331D16E6EE6D00F30DAF /* PKAppDelegate.m */; };
-		1E4D332016E6EE6D00F30DAF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4D331F16E6EE6D00F30DAF /* Default.png */; };
-		1E4D332216E6EE6D00F30DAF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4D332116E6EE6D00F30DAF /* Default@2x.png */; };
-		1E4D332416E6EE6D00F30DAF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4D332316E6EE6D00F30DAF /* Default-568h@2x.png */; };
 		1E4D332716E6EE6D00F30DAF /* PDUKeeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D332516E6EE6D00F30DAF /* PDUKeeper.xcdatamodeld */; };
 		1E4D332F16E6EEF800F30DAF /* PKGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D332E16E6EEF700F30DAF /* PKGraphViewController.m */; };
 		1E4D333516E6F05B00F30DAF /* 16-line-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4D333316E6F05B00F30DAF /* 16-line-chart.png */; };
@@ -78,6 +78,9 @@
 		1E29032F172A3D9900A47A28 /* PKProviderSelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKProviderSelectTableViewController.m; sourceTree = "<group>"; };
 		1E37B6BC175BC4AA00F865DB /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
 		1E37B6BD175BC4AA00F865DB /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		1E37B6BF175BC55D00F865DB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		1E37B6C1175BC57900F865DB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		1E37B6C3175BC58700F865DB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		1E3AE9E91745CD9E00E68734 /* PDU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDU.h; sourceTree = "<group>"; };
 		1E3AE9EA1745CD9E00E68734 /* PDU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDU.m; sourceTree = "<group>"; };
 		1E41B4C4172C356200720340 /* table_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_bg.png; sourceTree = "<group>"; };
@@ -96,9 +99,6 @@
 		1E4D331B16E6EE6D00F30DAF /* PDUKeeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDUKeeper-Prefix.pch"; sourceTree = "<group>"; };
 		1E4D331C16E6EE6D00F30DAF /* PKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKAppDelegate.h; sourceTree = "<group>"; };
 		1E4D331D16E6EE6D00F30DAF /* PKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKAppDelegate.m; sourceTree = "<group>"; };
-		1E4D331F16E6EE6D00F30DAF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		1E4D332116E6EE6D00F30DAF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		1E4D332316E6EE6D00F30DAF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1E4D332616E6EE6D00F30DAF /* PDUKeeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PDUKeeper.xcdatamodel; sourceTree = "<group>"; };
 		1E4D332D16E6EEF700F30DAF /* PKGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKGraphViewController.h; sourceTree = "<group>"; };
 		1E4D332E16E6EEF700F30DAF /* PKGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKGraphViewController.m; sourceTree = "<group>"; };
@@ -267,11 +267,11 @@
 				1E50D746171501D800BBFD4F /* PKTabBarViewController.m */,
 				1E4D331516E6EE6D00F30DAF /* PDUKeeper-Info.plist */,
 				1E4D331616E6EE6D00F30DAF /* InfoPlist.strings */,
+				1E37B6C3175BC58700F865DB /* Default-568h@2x.png */,
+				1E37B6BF175BC55D00F865DB /* Default.png */,
 				1E4D331916E6EE6D00F30DAF /* main.m */,
 				1E4D331B16E6EE6D00F30DAF /* PDUKeeper-Prefix.pch */,
-				1E4D331F16E6EE6D00F30DAF /* Default.png */,
-				1E4D332116E6EE6D00F30DAF /* Default@2x.png */,
-				1E4D332316E6EE6D00F30DAF /* Default-568h@2x.png */,
+				1E37B6C1175BC57900F865DB /* Default@2x.png */,
 				1ECD466B171667C20088C8F7 /* globals.h */,
 			);
 			name = "Supporting Files";
@@ -462,9 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E4D331816E6EE6D00F30DAF /* InfoPlist.strings in Resources */,
-				1E4D332016E6EE6D00F30DAF /* Default.png in Resources */,
-				1E4D332216E6EE6D00F30DAF /* Default@2x.png in Resources */,
-				1E4D332416E6EE6D00F30DAF /* Default-568h@2x.png in Resources */,
 				1E4D333516E6F05B00F30DAF /* 16-line-chart.png in Resources */,
 				1E4D333616E6F05B00F30DAF /* 16-line-chart@2x.png in Resources */,
 				1E4D334316E6F53B00F30DAF /* 250-stats.png in Resources */,
@@ -483,6 +480,9 @@
 				1EB84722174C7EA6002C1F90 /* drawing-2-1.png in Resources */,
 				1EF9397B174DB7F700404DC7 /* icon_57.png in Resources */,
 				1EF9397D174DB7FE00404DC7 /* icon_114.png in Resources */,
+				1E37B6C0175BC55D00F865DB /* Default.png in Resources */,
+				1E37B6C2175BC57900F865DB /* Default@2x.png in Resources */,
+				1E37B6C4175BC58700F865DB /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
