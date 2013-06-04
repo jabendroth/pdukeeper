@@ -214,7 +214,7 @@
     [detailStr appendString:@" earned"];
     if ([pdu dateCompleted] != nil){
         dateStr = [dateFormatter stringFromDate:[pdu dateCompleted]];
-        [detailStr appendString:[NSString stringWithFormat:@" on %@", [[pdu pduHours] doubleValue], dateStr]];
+        [detailStr appendString:[NSString stringWithFormat:@" on %@", dateStr]];
     }
 
     if ([pdu pduTitle] == nil){
