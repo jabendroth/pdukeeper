@@ -193,7 +193,7 @@
 -(void)configureCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath
 {
     PDU *pdu;
-    NSString *detailStr;
+    NSMutableString *detailStr;
     NSString *dateStr;
     NSDateFormatter *dateFormatter;
     
@@ -201,17 +201,22 @@
     [[cell textLabel] setText:@""];
     
     pdu = [frc objectAtIndexPath:indexPath];
-    
+
     dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"MM/dd/yyyy"];
-    
+
+    detailStr = [[NSMutableString alloc] init];
+    [detailStr appendString:[NSString stringWithFormat:@"%.2f PDU", [[pdu pduHours] doubleValue]]];
+
+    if([[pdu pduHours] doubleValue] > 1 || [[pdu pduHours] doubleValue] == 0) {
+        [detailStr appendString:@"s"];
+    }
+    [detailStr appendString:@" earned"];
     if ([pdu dateCompleted] != nil){
         dateStr = [dateFormatter stringFromDate:[pdu dateCompleted]];
-        detailStr = [NSString stringWithFormat:@"%.2f PDUs earned on %@", [[pdu pduHours] doubleValue], dateStr];
-    } else {
-        detailStr = [NSString stringWithFormat:@"%.2f PDUs earned", [[pdu pduHours] doubleValue]];
+        [detailStr appendString:[NSString stringWithFormat:@" on %@", dateStr]];
     }
-    
+
     if ([pdu pduTitle] == nil){
         [[cell textLabel] setText:@"[Title Not Set]"];
     } else {
